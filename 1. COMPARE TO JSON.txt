@@ -1,0 +1,25 @@
+1.	HOW TO COMPARE TWO JSON HAVE THE SAME PROPERTIES WITHOUT ORDER?
+
+
+a.	Let obj1 = { name: “ person1”, age:5};
+b.	Let obj1 = {age:5, name: “person1”};
+
+
+ANS:
+
+let obj1 = {
+  name: 'person1',
+  age: 5
+};
+    
+let obj2 = {
+  age: 5,
+  name: 'person 1'
+};
+    
+JSON.stringify(obj1) === JSON.stringify(obj2) 
+  if (obj1 === obj2){
+  console.log(false);
+  } else {
+  console.log(true);
+  }
